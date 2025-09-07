@@ -1,10 +1,15 @@
 version: 0.2
 
 phases:
+  install:
+    commands:
+      - echo Installing...
   build:
     commands:
-      - echo "No build needed for static site. Moving to artifacts phase."
+      - echo Build phase: no build commands for static site
 
 artifacts:
   files:
     - '**/*'
+  base-directory: .
+
